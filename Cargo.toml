@@ -1,0 +1,14 @@
+[package]
+name = "rust_docs_issue_link_crate_root"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = "1.0.215"
+
+[workspace]
+members = ["sub"]
+default-members = [
+    ".",
+    "sub",
+]
